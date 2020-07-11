@@ -6,7 +6,12 @@ import Tab from "./Tab";
 const Stack = createStackNavigator();
 
 export default () => (
-  <Stack.Navigator>
+  <Stack.Navigator
+    screenOptions={{
+      headerTitleAlign: "center",
+      headerStyle: { height: "40px" },
+    }}
+  >
     <Stack.Screen name="Tab" component={Tab} />
     <Stack.Screen name="Detail" component={Detail} />
   </Stack.Navigator>
