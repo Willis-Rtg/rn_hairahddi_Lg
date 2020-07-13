@@ -14,10 +14,10 @@ const changeHeaderName = (route) =>
   route?.state?.routeNames[route.state.index] || "Home";
 
 export default ({ navigation, route }) => {
-  useLayoutEffect(() => {
-    const title = changeHeaderName(route);
-    navigation.setOptions({ title });
-  }, [route]);
+  // useLayoutEffect(() => {
+  //   const title = changeHeaderName(route);
+  //   navigation.setOptions({ title });
+  // }, [route]);
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
