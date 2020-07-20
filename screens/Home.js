@@ -8,38 +8,41 @@ import Navigation from "../components/Navigation";
 const { width: WIDTH, height: HEIGHT } = Dimensions.get("window");
 
 const Wrapper = styled.View`
-  background-color: white;
   flex: 1;
   align-items: center;
+  background-color: white;
 `;
 const SwiperWrapper = styled.View`
   width: ${WIDTH}px;
-  height: ${HEIGHT / 4}px;
+  height: ${HEIGHT / 3.5}px;
 `;
 const Section = styled.View`
   flex: 1;
   /* background-color: olive; */
 `;
 const NavigationWrap = styled.View`
+  width: 70%;
   margin: 15px 0;
 `;
 
 const Text = styled.Text``;
 
-export default () => (
-  <Wrapper>
-    <SwiperWrapper>
-      <Swiper loop={true} controlsEnabled={false} timeout={2}>
-        <Section>
-          <Slide uri="https://blogpfthumb-phinf.pstatic.net/MjAxNzA1MDhfMTMw/MDAxNDk0MjEzODI1MTk2.kv_bC92TwpHZ9gigz5v2URknWBtb1l0x_PfgD0-2ANIg.l7AP6LsguPUaSiuHfFLxJonssTPB-u3X2MBUoiH_DnMg.JPEG.inkyoung91/%25BE%25D7%25C0%25DA.JPG" />
-        </Section>
-        {/* <Section>
-          <Text>Home2</Text>
-        </Section> */}
-      </Swiper>
-    </SwiperWrapper>
-    <NavigationWrap>
-      <Navigation></Navigation>
-    </NavigationWrap>
-  </Wrapper>
-);
+export default () => {
+  return (
+    <Wrapper>
+      <SwiperWrapper>
+        <Swiper loop={true} controlsEnabled={false} timeout={2}>
+          <Section>
+            <Slide uri="https://blogpfthumb-phinf.pstatic.net/MjAxNzA1MDhfMTMw/MDAxNDk0MjEzODI1MTk2.kv_bC92TwpHZ9gigz5v2URknWBtb1l0x_PfgD0-2ANIg.l7AP6LsguPUaSiuHfFLxJonssTPB-u3X2MBUoiH_DnMg.JPEG.inkyoung91/%25BE%25D7%25C0%25DA.JPG" />
+          </Section>
+          {/* <Section>
+            <Text>Home2</Text>
+          </Section> */}
+        </Swiper>
+      </SwiperWrapper>
+      <NavigationWrap>
+        <Navigation></Navigation>
+      </NavigationWrap>
+    </Wrapper>
+  );
+};

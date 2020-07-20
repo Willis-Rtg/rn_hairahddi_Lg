@@ -32,7 +32,7 @@ export default ({ navigation, route }) => {
             : route.name === "Book"
             ? (iconName += "calendar")
             : route.name === "Review"
-            ? (iconName += "chatbubbles")
+            ? (iconName += "person")
             : null;
           return <Ionicons name={iconName} size={18} color="grey" />;
         },

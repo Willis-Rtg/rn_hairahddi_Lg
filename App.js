@@ -19,7 +19,7 @@ export default function App() {
   const [ready, setReady] = useState(true);
 
   const loadAssets = async () => {
-    const images = cacheImages([require("./assets/slides/welcome.jpg")]);
+    const images = cacheImages([require("./assets/slides/welcome2.jpg")]);
     const fonts = cacheFonts([
       Ionicons.font,
       { cute: require("./assets/fonts/CuteFont-Regular.ttf") },
