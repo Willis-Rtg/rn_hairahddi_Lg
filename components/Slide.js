@@ -16,7 +16,7 @@ const Text = styled.Text``;
 const Slide = ({ uri }) => {
   return (
     <Wrapper style={{ overflow: "hidden" }}>
-      <Image source={{ uri }} resizeMode="cover" />
+      <Image source={{ uri }} resizeMode="contain" />
     </Wrapper>
   );
 };
